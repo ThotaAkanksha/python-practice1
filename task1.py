@@ -1,12 +1,13 @@
-# Task 1
-num1 =float(input('Enter the first number: '))
-num2 = float(input('Enter the second number: '))
-Addition= num1 + num2
-Subtraction= num1 - num2
-Multiplication= num1 * num2
-Division= num1 / num2
-print('Addition',Addition)
-print('Subtraction',Subtraction)
-print('Multiplication',Multiplication)
-print('Division',Division)
+student_marks = {
+    "Alice": 85,
+    "Bob": 78,
+    "Charlie": 92,
+    "Diana": 88
+}
 
+name = input("Enter the student's name: ")
+
+if name in student_marks:
+    print(f"{name}'s marks: {student_marks[name]}")
+else:
+    print("Student not found.")
